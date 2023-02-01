@@ -1,2 +1,2 @@
 # calculator
-Calculator App
+Calculator App for Simple Calculations
