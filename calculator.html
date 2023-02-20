@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <style>
+        #calculator {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        #calculator input[type="button"] {
+            width: 50px;
+            height: 50px;
+            font-size: 24px;
+            margin: 5px;
+        }
+
+        #input-display {
+            width: 90%;
+            height: 50px;
+            font-size: 24px;
+            text-align: right;
+            margin-bottom: 10px;
+        }
+
+        #result-display {
+            width: 90%;
+            height: 30px;
+            font-size: 20px;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="calculator">
+        <input type="text" id="input-display" readonly>
+        <input type="text" id="result-display" readonly>
+        <input type="button" value="1" onclick="addToInputDisplay('1')">
+        <input type="button" value="2" onclick="addToInputDisplay('2')">
+        <input type="button" value="3" onclick="addToInputDisplay('3')">
+        <input type="button" value="+" onclick="addToInputDisplay('+')">
+        <input type="button" value="4" onclick="addToInputDisplay('4')">
+        <input type="button" value="5" onclick="addToInputDisplay('5')">
+        <input type="button" value="6" onclick="addToInputDisplay('6')">
+        <input type="button" value="-" onclick="addToInputDisplay('-')">
+        <input type="button" value="7" onclick="addToInputDisplay('7')">
+        <input type="button" value="8" onclick="addToInputDisplay('8')">
+        <input type="button" value="9" onclick="addToInputDisplay('9')">
+        <input type="button" value="*" onclick="addToInputDisplay('*')">
+        <input type="button" value="C" onclick="clearInputDisplay()">
+        <input type="button" value="0" onclick="addToInputDisplay('0')">
+        <input type="button" value="/" onclick="addToInputDisplay('/')">
+        <input type="button" value="=" onclick="calculate()">
+    </div>
+    <script src="calculator.js"></script>
+</body>
+
+</html>
