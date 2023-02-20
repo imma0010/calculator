@@ -51,3 +51,7 @@
     background-color: #6ca86c;
     color: #fff;
 }
+
+.display input:focus {
+    outline-width: 0;
+}
